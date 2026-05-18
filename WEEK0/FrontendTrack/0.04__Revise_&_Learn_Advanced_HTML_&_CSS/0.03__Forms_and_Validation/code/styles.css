@@ -1,0 +1,158 @@
+/* 
+=========================
+  DESIGN SYSTEM
+========================= 
+*/
+:root {
+  --bg: #070a12;
+  --panel: #0e1424;
+  --panel-soft: #121a30;
+  --text: #eaf0ff;
+  --muted: #9aa7c2;
+  --accent: #7c5cff;
+  --border: rgba(255,255,255,0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background-color: var(--bg);
+  height: 100vh;
+  color: var(--text);
+}
+
+/* 
+=========================
+  MAIN WRAPPER
+========================= 
+*/
+.main {
+  width: 100%;
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* 
+=========================
+  TABS
+========================= 
+*/
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 12px 18px;
+  background: var(--panel-soft);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.tab.active {
+  background: var(--accent);
+  color: #0b0f1a;
+}
+
+/* 
+=========================
+  PANELS
+========================= 
+*/
+.panel {
+  display: none;
+  padding: 20px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 12px;
+}
+
+.panel.active {
+  display: block;
+}
+
+.panel-subtitle {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* 
+=========================
+  FORM SYSTEM
+========================= 
+*/
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel-soft);
+  color: var(--text);
+  border-radius: 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.form-row label {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-row input {
+  width: fit-content;
+}
+
+.form-row.split input {
+  width: 100%;
+}
+
+/* 
+=========================
+  BUTTON
+========================= 
+*/
+.submit-btn {
+  padding: 12px 18px;
+  background: var(--accent);
+  color: #0b0f1a;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* 
+=========================
+  Modal styles
+========================= 
+*/
+
+/* insert your modal styles here */

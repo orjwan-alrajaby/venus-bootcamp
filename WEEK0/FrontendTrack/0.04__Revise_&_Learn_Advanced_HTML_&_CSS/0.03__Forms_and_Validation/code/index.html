@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victoria Payment | Account Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main">
+    <!-- Tabs -->
+    <span class="tabs">
+      <div class="tab active" data-target="checkout">Login</div>
+      <div class="tab" data-target="login">Signup</div>
+      <div class="tab" data-target="signup">Checkout</div>
+    </span>
+
+    <!-- LOGIN -->
+    <div id="login" class="panel active">
+      <div>Welcome back - Log back into your account</div>
+      <div class="panel-subtitle">Access your dashboard and recent activity.</div>
+
+      <div class="form">
+        <!-- Build your Login Form Here -->
+      </div>
+    </div>
+
+    <!-- SIGNUP -->
+    <div id="signup" class="panel">
+
+      <div>Create account</div>
+      <div class="panel-subtitle">Join Victoria Pay and start managing your transactions.</div>
+
+      <div class="form">
+        <!-- Build your Sign up Form Here -->
+      </div>
+    </div>
+
+    <!-- CHECKOUT -->
+    <div id="checkout" class="panel">
+      <div>Checkout</div>
+      <div class="panel-subtitle">Complete your order securely.</div>
+
+      <div class="form">
+        <!-- Build your Checkout Form Here -->
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
